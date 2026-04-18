@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png" />
+  <title>SkyFleet Technologies</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons (free, open-source) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <img
+          src="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png"
+          alt="SkyFleet Technologies logo"
+          class="logo-image"
+        />
+        <span class="logo-text">SkyFleet</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm nav-cta">Get Started</a>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <i class="ph ph-lightning"></i> Trusted by 20+ Clients
+      </div>
+      <!-- Edit company tagline here -->
+      <h1 class="hero-title reveal">
+        Your Complete<br />
+        <span class="gradient-text">IT Solutions</span><br />
+        Partner
+      </h1>
+      <!-- Edit short description here -->
+      <p class="hero-desc reveal">
+        We design and launch transportation and shipping apps — from fleet operations tools
+        to real-time tracking platforms. Let's turn your logistics vision into reality.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary">
+          Request a Demo <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-tech-strip reveal">
+        <span>React</span><span>Node.js</span><span>AWS</span><span>Flutter</span>
+        <span>PostgreSQL</span><span>Docker</span><span>Figma</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow reveal">What We Offer</p>
+        <!-- Edit services heading here -->
+        <h2 class="section-title reveal">Services Built for<br />Transportation &amp; Shipping</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- ── Service Card: Web Development ── -->
+        <div class="service-card reveal" data-delay="0">
+          <div class="service-icon-wrap">
+            <i class="ph ph-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Pixel-perfect, performant websites and web apps using modern stacks like React, Vue, and Next.js.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: Mobile App Development ── -->
+        <div class="service-card reveal" data-delay="1">
+          <div class="service-icon-wrap">
+            <i class="ph ph-device-mobile"></i>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>Cross-platform iOS and Android apps with Flutter or React Native — fast, native, and scalable.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: Database Management ── -->
+        <div class="service-card reveal" data-delay="2">
+          <div class="service-icon-wrap">
+            <i class="ph ph-database"></i>
+          </div>
+          <h3>Database Management</h3>
+          <p>Design, optimization, and administration of SQL and NoSQL databases for reliability at any scale.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: API Development ── -->
+        <div class="service-card reveal" data-delay="3">
+          <div class="service-icon-wrap">
+            <i class="ph ph-plugs-connected"></i>
+          </div>
+          <h3>API Development</h3>
+          <p>RESTful and GraphQL APIs that connect your systems seamlessly, with thorough documentation.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: UI/UX Design ── -->
+        <div class="service-card reveal" data-delay="4">
+          <div class="service-icon-wrap">
+            <i class="ph ph-pen-nib"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Research-driven design systems, wireframes, and high-fidelity prototypes crafted in Figma.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: Cloud Services ── -->
+        <div class="service-card reveal" data-delay="5">
+          <div class="service-icon-wrap">
+            <i class="ph ph-cloud-arrow-up"></i>
+          </div>
+          <h3>Cloud Services</h3>
+          <p>AWS, GCP, and Azure deployment, CI/CD pipelines, container orchestration, and cost optimization.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: QA Testing ── -->
+        <div class="service-card reveal" data-delay="6">
+          <div class="service-icon-wrap">
+            <i class="ph ph-bug-beetle"></i>
+          </div>
+          <h3>QA Testing</h3>
+          <p>Manual and automated testing to ensure your web and mobile apps are stable, secure, and release-ready.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: Digital Marketing ── -->
+        <div class="service-card reveal" data-delay="6">
+          <div class="service-icon-wrap">
+            <i class="ph ph-megaphone-simple"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Performance-driven SEO, social media, and paid campaigns to grow traffic, leads, and customer engagement.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <!-- ── Service Card: Maintenance & Support ── -->
+        <div class="service-card reveal service-card--wide" data-delay="5">
+          <div class="service-icon-wrap">
+            <i class="ph ph-wrench"></i>
+          </div>
+          <h3>Maintenance &amp; Support</h3>
+          <p>24/7 monitoring, security patches, performance audits, and dedicated support plans to keep your product running smoothly.</p>
+          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container about-stack">
+      <div class="about-row">
+        <div class="about-visual reveal">
+          <div class="about-img-card">
+            <div class="about-blob"></div>
+            <div class="about-card-inner">
+              <i class="ph ph-truck-trailer about-big-icon"></i>
+              <p class="about-card-quote">"Engineering growth for modern logistics."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-eyebrow reveal">About Us</p>
+          <h2 class="section-title reveal">Reliable Digital Solutions for Modern Logistics Leaders</h2>
+          <p class="about-body reveal">
+            SkyFleet Technologies delivers high-performance web and mobile solutions for transportation and shipping companies focused on efficiency and service quality.
+            Our process is transparent, execution-focused, and built to produce scalable systems your teams can trust every day.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal">
+              <i class="ph ph-eye"></i>
+              <div>
+                <strong>Our Vision</strong>
+                <p>To simplify transportation and shipping operations through intuitive, reliable digital products.</p>
+              </div>
+            </div>
+            <div class="pillar reveal">
+              <i class="ph ph-target"></i>
+              <div>
+                <strong>Our Mission</strong>
+                <p>Build and ship focused transport-tech apps that solve day-to-day logistics and shipment challenges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-row about-row--reverse">
+        <div class="about-visual reveal">
+          <div class="about-img-card">
+            <div class="about-blob"></div>
+            <div class="about-card-inner">
+              <i class="ph ph-shield-checkered about-big-icon"></i>
+              <p class="about-card-quote">"Built on trust, speed, and quality."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text trust-block reveal">
+          <p class="section-eyebrow">Why Trust Us?</p>
+          <h3 class="about-subtitle">Domain Expertise</h3>
+          <p class="about-body">
+            We understand transportation and shipping workflows deeply, from dispatch and live tracking to proof-of-delivery and reporting.
+            Our team builds dependable systems that help operations run smoother, faster, and with greater visibility.
+          </p>
+          <div class="trust-points">
+            <div class="trust-item"><i class="ph ph-check-circle"></i> Transport-focused Product Thinking</div>
+            <div class="trust-item"><i class="ph ph-check-circle"></i> Secure &amp; Scalable Architecture</div>
+            <div class="trust-item"><i class="ph ph-check-circle"></i> Transparent Communication</div>
+            <div class="trust-item"><i class="ph ph-check-circle"></i> Quality-Driven QA Process</div>
+            <div class="trust-item"><i class="ph ph-check-circle"></i> On-Time Delivery Culture</div>
+            <div class="trust-item"><i class="ph ph-check-circle"></i> Reliable Post-Launch Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Edit stat numbers and labels here -->
+        <div class="stat-card reveal">
+          <span class="stat-num" data-target="2">0</span><span class="stat-suffix">+</span>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span>
+          <p>Clients Served</p>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-num" data-target="12">0</span><span class="stat-suffix">+</span>
+          <p>Technologies Used</p>
+        </div>
+        <div class="stat-card reveal">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECHNOLOGIES ===================== -->
+  <section class="section technologies" id="technologies">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow reveal">Our Stack</p>
+        <h2 class="section-title reveal">Technologies We Serve</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card reveal" data-delay="0">
+          <h3><i class="ph ph-layout"></i> Frontend</h3>
+          <div class="tech-tags">
+            <span>React</span><span>Next.js</span><span>Vue.js</span><span>TypeScript</span>
+            <span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
+          </div>
+        </div>
+
+        <div class="tech-card reveal" data-delay="1">
+          <h3><i class="ph ph-cpu"></i> Backend &amp; APIs</h3>
+          <div class="tech-tags">
+            <span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span>
+            <span>REST APIs</span><span>GraphQL</span><span>Socket.IO</span>
+          </div>
+        </div>
+
+        <div class="tech-card reveal" data-delay="2">
+          <h3><i class="ph ph-device-mobile"></i> Mobile</h3>
+          <div class="tech-tags">
+            <span>Flutter</span><span>React Native</span><span>Android</span><span>iOS</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+
+        <div class="tech-card reveal" data-delay="3">
+          <h3><i class="ph ph-cloud"></i> Cloud &amp; DevOps</h3>
+          <div class="tech-tags">
+            <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+            <span>NGINX</span><span>Linux</span><span>GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="tech-card reveal" data-delay="4">
+          <h3><i class="ph ph-database"></i> Database &amp; Analytics</h3>
+          <div class="tech-tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span>
+            <span>Elasticsearch</span><span>Power BI</span>
+          </div>
+        </div>
+
+        <div class="tech-card reveal" data-delay="5">
+          <h3><i class="ph ph-shield-check"></i> QA &amp; Growth</h3>
+          <div class="tech-tags">
+            <span>Manual Testing</span><span>Automation Testing</span><span>Cypress</span><span>Selenium</span>
+            <span>SEO</span><span>Google Ads</span><span>Meta Ads</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <p class="section-eyebrow reveal">Get In Touch</p>
+        <h2 class="section-title reveal">Let's Build Something<br />Great Together</h2>
+        <!-- Edit contact details here -->
+        <ul class="contact-details reveal">
+          <li><i class="ph ph-map-pin"></i> 201 Tech Park, Ahmedabad, Gujarat 380015</li>
+          <li><i class="ph ph-phone"></i> +91 97730 27241 | +91 96240 71076</li>
+          <li><i class="ph ph-envelope"></i> hello.skyfleettechnologies@gmail.com</li>
+        </ul>
+        <div class="contact-socials reveal">
+          <!-- Edit social links here -->
+          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
+          <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required *</label>
+            <!-- Edit dropdown options here -->
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Database Management">Database Management</option>
+              <option value="API Development">API Development</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Cloud Services">Cloud Services</option>
+              <option value="QA Testing">QA Testing</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Maintenance & Support">Maintenance &amp; Support</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+          <span id="btnText">Send Message <i class="ph ph-paper-plane-tilt"></i></span>
+          <span id="btnLoader" class="hidden">Sending…</span>
+        </button>
+        <!-- Form feedback messages -->
+        <p class="form-success hidden" id="formSuccess">✅ Your message was sent! We'll be in touch shortly.</p>
+        <p class="form-error hidden" id="formError">❌ Something went wrong. Please try again or email us directly.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <img
+            src="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png"
+            alt="SkyFleet Technologies logo"
+            class="logo-image"
+          />
+          <span class="logo-text">SkyFleet</span>
+        </a>
+        <!-- Edit footer tagline here -->
+        <p>Your Complete IT Solutions Partner — building the digital future.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#contact">Web Development</a></li>
+          <li><a href="#contact">Mobile Apps</a></li>
+          <li><a href="#contact">Cloud Services</a></li>
+          <li><a href="#contact">Startup Solutions</a></li>
+          <li><a href="#contact">UI/UX Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <!-- Edit footer contact info here -->
+        <p><i class="ph ph-envelope"></i> hello.skyfleettechnologies@gmail.com</p>
+        <p><i class="ph ph-phone"></i> +91 97730 27241 | +91 96240 71076</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Edit copyright year/name here -->
+    <div class="footer-bottom">
+      <p>© 2025 SkyFleet Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
