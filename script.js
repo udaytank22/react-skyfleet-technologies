@@ -44,38 +44,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealEls.forEach(el => revealObserver.observe(el));
 
 
-/* ── 4. COUNTER ANIMATION (Stats section) ── */
-function animateCounter(el) {
-  const target   = parseInt(el.getAttribute('data-target'), 10);
-  const duration = 1600; // ms
-  const step     = 16;   // ~60fps
-  const increment= target / (duration / step);
-  let current    = 0;
 
-  const timer = setInterval(() => {
-    current += increment;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
-    el.textContent = Math.floor(current);
-  }, step);
-}
-
-// Trigger counters only when the stats section is visible
-const statNums = document.querySelectorAll('.stat-num');
-
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      statNums.forEach(animateCounter);
-      counterObserver.disconnect(); // run once
-    }
-  });
-}, { threshold: 0.3 });
-
-const statsSection = document.getElementById('stats');
-if (statsSection) counterObserver.observe(statsSection);
 
 
 /* ── 5. CONTACT FORM SUBMISSION ── */

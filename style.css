@@ -736,14 +736,58 @@ input, select, textarea {
   color: var(--accent);
   letter-spacing: 0.05em;
 }
-.port-info { padding: 1.25rem; }
+.port-info { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
 .port-info h4 {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
 }
-.port-info p { font-size: 0.85rem; color: var(--text-muted); }
+.port-info p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.4; }
+
+.port-details-list {
+  margin-top: 0.75rem;
+  padding-left: 1.2rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.port-details-list li {
+  line-height: 1.4;
+}
+.port-details-list strong {
+  color: var(--accent);
+}
+
+.port-info .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: color var(--transition);
+  align-self: flex-start;
+}
+.port-info .card-link:hover {
+  color: var(--accent-2);
+}
+
+/* Fallback Gradients with Images */
+.port-img--cargo { background-image: url('assets/cargo_management.png'), linear-gradient(135deg,#0f2027,#203a43,#2c5364); }
+.port-img--logistic { background-image: url('assets/logistic_platform.png'), linear-gradient(135deg,#1a1a2e,#16213e,#0f3460); }
+.port-img--org { background-image: url('assets/org_management.png'), linear-gradient(135deg,#0d1b2a,#1b2d3e,#00b4d8); }
+.port-img--insurance { background-image: url('assets/insurance_manager.png'), linear-gradient(135deg,#1c0535,#3a015c,#7209b7); }
+.port-img--employee { background-image: url('assets/employee_system.png'), linear-gradient(135deg,#052c34,#05414e,#00d4ff); }
+.port-img--society { background-image: url('assets/society_management.png'), linear-gradient(135deg,#0a0a23,#1a1a4e,#3a3af7); }
+.port-img--society-admin { background-image: url('assets/society_admin.png'), linear-gradient(135deg,#1f4037,#99f2c8); }
+.port-img--ship-chandling { background-image: url('assets/ship_chandling.png'), linear-gradient(135deg,#ff9966,#ff5e62); }
 
 /* =============================================
    CONTACT
