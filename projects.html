@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/skyfleet_logo.svg" />
+  <title>All Engineering Projects — SkyFleet Technologies</title>
+  <meta name="description" content="Explore the full portfolio of enterprise software, mobile apps, ERP systems, community portals, and custom web applications built by SkyFleet Technologies across all industries." />
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/skyfleet_logo.svg" alt="SkyFleet Technologies logo" class="logo-icon" />
+        <span>SkyFleet Technologies</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#technologies">Technologies</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="btn btn-primary btn-sm nav-cta">Get In Touch</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE BANNER ===================== -->
+  <section class="page-header" style="background: var(--navy); color: #FFFFFF; padding-top: calc(var(--nav-h) + 3rem); padding-bottom: 4rem;">
+    <div class="container">
+      <p class="hero-eyebrow" style="color: #88C0D0;"><i class="ph ph-briefcase"></i> Complete Software Portfolio</p>
+      <h1 class="hero-title" style="font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-top: 0.5rem; color: #FFFFFF;">
+        All Engineering &amp; Enterprise Projects
+      </h1>
+      <p class="hero-desc" style="color: #D8DEE9; max-width: 680px; margin-top: 1rem;">
+        Discover our proven track record of custom software solutions spanning logistics, workforce management, 
+        insurance platforms, real estate, society management, and enterprise ERP systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS PORTFOLIO GRID ===================== -->
+  <section class="section portfolio" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/cargo_management.png" alt="Cargo Management System" class="project-img" />
+            <span class="project-badge">Logistics</span>
+          </div>
+          <div class="project-body">
+            <h3>Cargo &amp; Warehouse Operations System</h3>
+            <p class="project-summary">
+              An enterprise platform designed for managing warehouse cargo movements, vehicle dispatch scheduling, 
+              and real-time inventory tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Role-based access control (RBAC) &amp; multi-tenant security</li>
+              <li><i class="ph ph-check"></i> Dynamic job voucher creation &amp; warehouse inventory workflow</li>
+              <li><i class="ph ph-check"></i> Real-time push notifications for critical cargo updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/logistic_platform.png" alt="Transport Logistics Platform" class="project-img" />
+            <span class="project-badge">Transport</span>
+          </div>
+          <div class="project-body">
+            <h3>Transport Marketplace Platform</h3>
+            <p class="project-summary">
+              A comprehensive mobile and web ecosystem connecting shippers with freight transporters through automated bidding 
+              and live telematics tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Live GPS route tracking &amp; automated milestone updates</li>
+              <li><i class="ph ph-check"></i> Secure payment gateway &amp; digital invoice clearance</li>
+              <li><i class="ph ph-check"></i> Automated KYC verification &amp; FASTag integration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/org_management.png" alt="Organization Management Application" class="project-img" />
+            <span class="project-badge">Enterprise</span>
+          </div>
+          <div class="project-body">
+            <h3>Organization &amp; Field Workforce Suite</h3>
+            <p class="project-summary">
+              An integrated employee attendance, task dispatch, and warehouse inventory tracking suite for distributed operational teams.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Geofenced attendance logging with selfie verification</li>
+              <li><i class="ph ph-check"></i> Automated inventory tracking with barcode scanning</li>
+              <li><i class="ph ph-check"></i> Structured leave management &amp; payroll approval workflows</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/insurance_manager.png" alt="Insurance Process Manager" class="project-img" />
+            <span class="project-badge">Insurance</span>
+          </div>
+          <div class="project-body">
+            <h3>Commercial Vehicle Insurance Manager</h3>
+            <p class="project-summary">
+              A specialized workflow platform streamlining vehicle insurance inspections, claims documentation, and policy history tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Optimized multi-image categorization and cloud upload</li>
+              <li><i class="ph ph-check"></i> Centralized vehicle policy records &amp; inspection history</li>
+              <li><i class="ph ph-check"></i> Fast claims verification pipeline for fleet administrators</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/employee_system.png" alt="Employee Management System" class="project-img" />
+            <span class="project-badge">Operations</span>
+          </div>
+          <div class="project-body">
+            <h3>Employee &amp; Task Management Suite</h3>
+            <p class="project-summary">
+              An operational task dispatch and attendance verification system created for tracking daily field assignments and project hours.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> GPS &amp; selfie-based attendance verification system</li>
+              <li><i class="ph ph-check"></i> Task estimate tracking &amp; completion delay analysis</li>
+              <li><i class="ph ph-check"></i> Automated push notification task reminders and approvals</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/society_management.png" alt="Society Management Application" class="project-img" />
+            <span class="project-badge">Community</span>
+          </div>
+          <div class="project-body">
+            <h3>Society &amp; Gate Operations Platform</h3>
+            <p class="project-summary">
+              An integrated mobile application managing resident profiles, gate access passes, amenity bookings, and maintenance tickets.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Gate visitor authentication with QR code pass verification</li>
+              <li><i class="ph ph-check"></i> Automated parking slot allocation &amp; vehicle logging</li>
+              <li><i class="ph ph-check"></i> Amenity booking engine with real-time slot control</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/society_admin.png" alt="Society Management Admin Panel" class="project-img" />
+            <span class="project-badge">Web Portal</span>
+          </div>
+          <div class="project-body">
+            <h3>Centralized Society Admin Operations Portal</h3>
+            <p class="project-summary">
+              A comprehensive administrative web dashboard for monitoring security logs, complaint tickets, financial reports, and sub-admin controls.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Real-time monitoring dashboard for gate security logs</li>
+              <li><i class="ph ph-check"></i> Granular committee &amp; sub-admin permission management</li>
+              <li><i class="ph ph-check"></i> Comprehensive analytics for maintenance &amp; amenity usage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/ship_chandling.png" alt="Ship Chandling ERP Project" class="project-img" />
+            <span class="project-badge">ERP System</span>
+          </div>
+          <div class="project-body">
+            <h3>Ship Chandling ERP Platform</h3>
+            <p class="project-summary">
+              An integrated enterprise maritime procurement platform managing vessel inquiries, vendor quotation comparisons, and vessel supply logistics.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Email inquiry parsing &amp; automated quote comparison</li>
+              <li><i class="ph ph-check"></i> End-to-end purchase order, inventory, &amp; delivery tracking</li>
+              <li><i class="ph ph-check"></i> Strategic reporting dashboards for maritime procurement</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-footer reveal" style="text-align: center; margin-top: 4rem;">
+        <a href="index.html#contact" class="btn btn-primary btn-lg">
+          Discuss Your Project Requirements <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/skyfleet_logo.svg" alt="SkyFleet Technologies logo" class="logo-icon" />
+          <span>SkyFleet Technologies</span>
+        </a>
+        <p>Your trusted enterprise IT partner for custom software engineering and digital solutions across all industries.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#technologies">Technologies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Capabilities</h5>
+        <ul>
+          <li><a href="index.html#services">Web Systems</a></li>
+          <li><a href="index.html#services">Mobile Telematics</a></li>
+          <li><a href="index.html#services">Cloud Infrastructure</a></li>
+          <li><a href="index.html#services">System Integration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info.skyfleettechnologies@gmail.com">info.skyfleettechnologies@gmail.com</a></li>
+          <li><a href="index.html#contact">+91 97730 27241</a></li>
+          <li><a href="index.html#contact">Ahmedabad, Gujarat, India</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> SkyFleet Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

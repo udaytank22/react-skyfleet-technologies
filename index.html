@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png" />
-  <title>SkyFleet Technologies</title>
+  <link rel="icon" type="image/svg+xml" href="assets/skyfleet_logo.svg" />
+  <title>SkyFleet Technologies — Enterprise Software &amp; Digital Solutions</title>
+  <meta name="description" content="SkyFleet Technologies builds custom enterprise web applications, mobile apps, ERP platforms, and cloud infrastructure for businesses across all industries." />
 
-  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <!-- Google Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Phosphor Icons (free, open-source) -->
+  <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
 
   <link rel="stylesheet" href="style.css" />
@@ -26,9 +25,10 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="logo">
-        <img src="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png" alt="SkyFleet Technologies logo" class="logo-image" />
-        <span class="logo-text">SkyFleet</span>
+        <img src="assets/skyfleet_logo.svg" alt="SkyFleet Technologies logo" class="logo-icon" />
+        <span>SkyFleet Technologies</span>
       </a>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
@@ -36,47 +36,36 @@
         <li><a href="#technologies">Technologies</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn-sm nav-cta">Get Started</a>
-      <!-- Hamburger for mobile -->
+
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get In Touch</a>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- ===================== HERO SECTION ===================== -->
   <section class="hero" id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow"></div>
-    <div class="container hero-content">
-      <!-- <div class="hero-badge reveal">
-        <i class="ph ph-lightning"></i> Trusted by 20+ Clients
-      </div> -->
-      <!-- Edit company tagline here -->
+    <div class="container hero-container">
+      <div class="hero-eyebrow reveal">
+        <i class="ph ph-shield-check"></i> Enterprise Multi-Industry Technology Partner
+      </div>
       <h1 class="hero-title reveal">
-        Your Complete<br />
-        <span class="gradient-text">IT Solutions</span><br />
-        Partner
+        Custom Enterprise Software &amp; Digital Solutions For Every Industry
       </h1>
-      <!-- Edit short description here -->
       <p class="hero-desc reveal">
-        We design and launch transportation and shipping apps — from fleet operations tools
-        to real-time tracking platforms. Let's turn your logistics vision into reality.
+        We design, build, and scale high-performance web applications, mobile apps, enterprise ERPs, 
+        and cloud infrastructure engineered for businesses across all commercial sectors.
       </p>
       <div class="hero-actions reveal">
         <a href="#contact" class="btn btn-primary">
-          Request a Demo <i class="ph ph-arrow-right"></i>
+          Get In Touch <i class="ph ph-arrow-right"></i>
         </a>
-        <a href="#services" class="btn btn-ghost">Explore Services</a>
+        <a href="#projects" class="btn btn-outline-light">
+          View Featured Projects
+        </a>
       </div>
-      <div class="hero-tech-strip reveal">
-        <span>React</span><span>Node.js</span><span>AWS</span><span>Flutter</span>
-        <span>PostgreSQL</span><span>Docker</span><span>Figma</span>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <span class="scroll-line"></span>
     </div>
   </section>
 
@@ -84,510 +73,355 @@
   <section class="section services" id="services">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow reveal">What We Offer</p>
-        <!-- Edit services heading here -->
-        <h2 class="section-title reveal">Services Built for<br />Transportation &amp; Shipping</h2>
+        <p class="section-eyebrow reveal">Our Capabilities</p>
+        <h2 class="section-title reveal">End-to-End Software Engineering &amp; Digital Solutions</h2>
       </div>
 
       <div class="services-grid">
-
-        <!-- ── Service Card: Web Development ── -->
-        <div class="service-card reveal" data-delay="0">
-          <div class="service-icon-wrap">
-            <i class="ph ph-code"></i>
-          </div>
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-code"></i></div>
           <h3>Web Development</h3>
-          <p>Pixel-perfect, performant websites and web apps using modern stacks like React, Vue, and Next.js.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+          <p>Performant, secure enterprise web applications built with modern frontend frameworks and responsive architectures.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: Mobile App Development ── -->
-        <div class="service-card reveal" data-delay="1">
-          <div class="service-icon-wrap">
-            <i class="ph ph-device-mobile"></i>
-          </div>
+        <!-- Service 2 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-device-mobile"></i></div>
           <h3>Mobile App Development</h3>
-          <p>Cross-platform iOS and Android apps with Flutter or React Native — fast, native, and scalable.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+          <p>Cross-platform iOS and Android mobile applications tailored for enterprise workflows, field personnel, and consumer portals.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: Database Management ── -->
-        <div class="service-card reveal" data-delay="2">
-          <div class="service-icon-wrap">
-            <i class="ph ph-database"></i>
-          </div>
+        <!-- Service 3 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-database"></i></div>
           <h3>Database Management</h3>
-          <p>Design, optimization, and administration of SQL and NoSQL databases for reliability at any scale.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+          <p>High-availability SQL and NoSQL database architecture, query optimization, and secure data administration.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: API Development ── -->
-        <div class="service-card reveal" data-delay="3">
-          <div class="service-icon-wrap">
-            <i class="ph ph-plugs-connected"></i>
-          </div>
-          <h3>API Development</h3>
-          <p>RESTful and GraphQL APIs that connect your systems seamlessly, with thorough documentation.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 4 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-plugs-connected"></i></div>
+          <h3>API &amp; System Integration</h3>
+          <p>Robust RESTful &amp; GraphQL APIs connecting payment gateways, ERP systems, IoT hardware, and third-party platforms.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: UI/UX Design ── -->
-        <div class="service-card reveal" data-delay="4">
-          <div class="service-icon-wrap">
-            <i class="ph ph-pen-nib"></i>
-          </div>
-          <h3>UI/UX Design</h3>
-          <p>Research-driven design systems, wireframes, and high-fidelity prototypes crafted in Figma.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 5 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-pen-nib"></i></div>
+          <h3>UI/UX Product Design</h3>
+          <p>Research-backed interface design systems focused on intuitive user experience, brand aesthetic, and operational clarity.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: Cloud Services ── -->
-        <div class="service-card reveal" data-delay="5">
-          <div class="service-icon-wrap">
-            <i class="ph ph-cloud-arrow-up"></i>
-          </div>
-          <h3>Cloud Services</h3>
-          <p>AWS, GCP, and Azure deployment, CI/CD pipelines, container orchestration, and cost optimization.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 6 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-cloud-arrow-up"></i></div>
+          <h3>Cloud &amp; DevOps Services</h3>
+          <p>AWS and cloud deployment, container orchestration, automated CI/CD pipelines, and infrastructure optimization.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: QA Testing ── -->
-        <div class="service-card reveal" data-delay="6">
-          <div class="service-icon-wrap">
-            <i class="ph ph-bug-beetle"></i>
-          </div>
-          <h3>QA Testing</h3>
-          <p>Manual and automated testing to ensure your web and mobile apps are stable, secure, and release-ready.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 7 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-bug-beetle"></i></div>
+          <h3>QA &amp; Security Testing</h3>
+          <p>Comprehensive manual and automated testing protocols ensuring high data stability, reliability, and security.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: Digital Marketing ── -->
-        <div class="service-card reveal" data-delay="6">
-          <div class="service-icon-wrap">
-            <i class="ph ph-megaphone-simple"></i>
-          </div>
-          <h3>Digital Marketing</h3>
-          <p>Performance-driven SEO, social media, and paid campaigns to grow traffic, leads, and customer engagement.
-          </p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 8 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-chart-line-up"></i></div>
+          <h3>Digital Growth &amp; Analytics</h3>
+          <p>Data analytics dashboards, search visibility, and conversion-focused digital performance strategies.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
 
-        <!-- ── Service Card: Maintenance & Support ── -->
-        <div class="service-card reveal service-card--wide" data-delay="5">
-          <div class="service-icon-wrap">
-            <i class="ph ph-wrench"></i>
-          </div>
-          <h3>Maintenance &amp; Support</h3>
-          <p>24/7 monitoring, security patches, performance audits, and dedicated support plans to keep your product
-            running smoothly.</p>
-          <a href="#contact" class="card-link">Talk to us <i class="ph ph-arrow-up-right"></i></a>
+        <!-- Service 9 -->
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-wrench"></i></div>
+          <h3>Maintenance &amp; SLA Support</h3>
+          <p>Proactive 24/7 system monitoring, security updates, regular maintenance patches, and dedicated SLA contracts.</p>
+          <a href="#contact" class="card-link">Discuss requirement <i class="ph ph-arrow-right"></i></a>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ===================== ABOUT ===================== -->
   <section class="section about" id="about">
-    <div class="container about-stack">
-      <div class="about-row">
-        <div class="about-visual reveal">
-          <div class="about-img-card">
-            <div class="about-blob"></div>
-            <div class="about-card-inner">
-              <i class="ph ph-truck-trailer about-big-icon"></i>
-              <p class="about-card-quote">"Engineering growth for modern logistics."</p>
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <p class="section-eyebrow">Cross-Industry Excellence</p>
+        <h2 class="about-title">Empowering Modern Businesses Across All Industries</h2>
+        <p class="about-body">
+          SkyFleet Technologies specializes in building high-concurrency, scalable digital solutions for diverse commercial 
+          sectors—ranging from logistics and transport to healthcare, e-commerce, insurance, real estate, and enterprise workforce 
+          management. Our engineering methodology prioritizes data integrity, robust security, and performance excellence.
+        </p>
+
+        <div class="about-pillars">
+          <div class="pillar-item">
+            <i class="ph ph-target"></i>
+            <div>
+              <strong>Multi-Industry Engineering</strong>
+              <p>Tailored software systems engineered specifically for custom business logic, ERP, CRM, and field operations.</p>
             </div>
           </div>
-        </div>
-
-        <div class="about-text">
-          <p class="section-eyebrow reveal">About Us</p>
-          <h2 class="section-title reveal">Reliable Digital Solutions for Modern Logistics Leaders</h2>
-          <p class="about-body reveal">
-            SkyFleet Technologies delivers high-performance web and mobile solutions for transportation and shipping
-            companies focused on efficiency and service quality.
-            Our process is transparent, execution-focused, and built to produce scalable systems your teams can trust
-            every day.
-          </p>
-
-          <div class="about-pillars">
-            <div class="pillar reveal">
-              <i class="ph ph-eye"></i>
-              <div>
-                <strong>Our Vision</strong>
-                <p>To simplify transportation and shipping operations through intuitive, reliable digital products.</p>
-              </div>
-            </div>
-            <div class="pillar reveal">
-              <i class="ph ph-target"></i>
-              <div>
-                <strong>Our Mission</strong>
-                <p>Build and ship focused transport-tech apps that solve day-to-day logistics and shipment challenges.
-                </p>
-              </div>
+          <div class="pillar-item">
+            <i class="ph ph-shield-check"></i>
+            <div>
+              <strong>Enterprise Data Security</strong>
+              <p>Strict access controls, role-based security, and compliant data management standards across all modules.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="about-row about-row--reverse">
-        <div class="about-visual reveal">
-          <div class="about-img-card">
-            <div class="about-blob"></div>
-            <div class="about-card-inner">
-              <i class="ph ph-shield-checkered about-big-icon"></i>
-              <p class="about-card-quote">"Built on trust, speed, and quality."</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-text trust-block reveal">
-          <p class="section-eyebrow">Why Trust Us?</p>
-          <h3 class="about-subtitle">Domain Expertise</h3>
-          <p class="about-body">
-            We understand transportation and shipping workflows deeply, from dispatch and live tracking to
-            proof-of-delivery and reporting.
-            Our team builds dependable systems that help operations run smoother, faster, and with greater visibility.
-          </p>
-          <div class="trust-points">
-            <div class="trust-item"><i class="ph ph-check-circle"></i> Transport-focused Product Thinking</div>
-            <div class="trust-item"><i class="ph ph-check-circle"></i> Secure &amp; Scalable Architecture</div>
-            <div class="trust-item"><i class="ph ph-check-circle"></i> Transparent Communication</div>
-            <div class="trust-item"><i class="ph ph-check-circle"></i> Quality-Driven QA Process</div>
-            <div class="trust-item"><i class="ph ph-check-circle"></i> On-Time Delivery Culture</div>
-            <div class="trust-item"><i class="ph ph-check-circle"></i> Reliable Post-Launch Support</div>
-          </div>
-        </div>
+      <div class="about-box reveal">
+        <h4>Why Partner With SkyFleet?</h4>
+        <ul class="trust-checklist">
+          <li><i class="ph ph-check-circle"></i> Multi-industry product architecture</li>
+          <li><i class="ph ph-check-circle"></i> High-availability database &amp; API design</li>
+          <li><i class="ph ph-check-circle"></i> Clear documentation and transparent reporting</li>
+          <li><i class="ph ph-check-circle"></i> Rigid QA and stress-testing protocols</li>
+          <li><i class="ph ph-check-circle"></i> Dedicated SLA post-deployment support</li>
+        </ul>
       </div>
     </div>
   </section>
-
 
   <!-- ===================== PROJECTS ===================== -->
   <section class="section portfolio" id="projects">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow reveal">Our Work</p>
-        <h2 class="section-title reveal">Featured Projects</h2>
+        <p class="section-eyebrow reveal">Proven Case Studies</p>
+        <h2 class="section-title reveal">Featured Engineering Projects</h2>
       </div>
 
       <div class="portfolio-grid">
         <!-- Project 1 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--cargo">
-            <div class="port-overlay">
-              <span class="port-tag">Logistics</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/cargo_management.png" alt="Cargo Management System" class="project-img" />
+            <span class="project-badge">Logistics</span>
           </div>
-          <div class="port-info">
-            <h4>CARGO MANAGEMENT SYSTEM</h4>
-            <p>AN ENTERPRISE SOLUTION FOR WAREHOUSE CARGO MOVEMENT AND VEHICLE OPERATIONS</p>
-            <ul class="port-details-list">
-              <li>Developed a <strong>secure authentication system</strong> with <strong>role-based access control (RBAC)</strong> to manage user permissions and access.</li>
-              <li>Designed and implemented <strong>dynamic forms</strong> for trip creation, job vouchers, and warehouse workflows.</li>
-              <li>Implemented <strong>real-time tracking functionality</strong> for vehicle operations and cargo movement.</li>
-              <li>Built comprehensive <strong>inventory management interfaces</strong> with advanced filtering and search.</li>
-              <li>Integrated <strong>Firebase Cloud Messaging (FCM)</strong> to deliver targeted push notifications.</li>
-              <li>Developed <strong>interactive data visualization components</strong> for operational reporting and analytics.</li>
+          <div class="project-body">
+            <h3>Cargo &amp; Warehouse Operations System</h3>
+            <p class="project-summary">
+              An enterprise platform designed for managing warehouse cargo movements, vehicle dispatch scheduling, 
+              and real-time inventory tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Role-based access control (RBAC) &amp; multi-tenant security</li>
+              <li><i class="ph ph-check"></i> Dynamic job voucher creation &amp; warehouse inventory workflow</li>
+              <li><i class="ph ph-check"></i> Real-time push notifications for critical cargo updates</li>
             </ul>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--logistic">
-            <div class="port-overlay">
-              <span class="port-tag">Transport</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/logistic_platform.png" alt="Transport Logistics Platform" class="project-img" />
+            <span class="project-badge">Transport</span>
           </div>
-          <div class="port-info">
-            <h4>TRANSPORT LOGISTICS PLATFORM</h4>
-            <p>A COMPREHENSIVE LOGISTICS MANAGEMENT APPLICATION CONNECTING TRANSPORTERS AND SHIPPERS</p>
-            <ul class="port-details-list">
-              <li>Implemented <strong>OTP-based authentication system</strong> integrated with WhatsApp via OAuth2.</li>
-              <li>Developed <strong>role-based access control</strong> for shippers, transporters, and agents.</li>
-              <li>Created <strong>interactive maps and location services</strong> for real-time GPS tracking.</li>
-              <li>Built a <strong>bidding system</strong> for transporters with real-time notifications.</li>
-              <li>Integrated <strong>Easebuzz payment gateway</strong> for secure financial transactions.</li>
-              <li>Engineered <strong>document verification system</strong> for KYC processes.</li>
-              <li>Implemented <strong>Firebase notifications</strong> for real-time user alerts and updates.</li>
-              <li>Designed <strong>multi-step forms</strong> for insurance purchase and FASTag acquisition.</li>
+          <div class="project-body">
+            <h3>Transport Marketplace Platform</h3>
+            <p class="project-summary">
+              A comprehensive mobile and web ecosystem connecting shippers with freight transporters through automated bidding 
+              and live telematics tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Live GPS route tracking &amp; automated milestone updates</li>
+              <li><i class="ph ph-check"></i> Secure payment gateway &amp; digital invoice clearance</li>
+              <li><i class="ph ph-check"></i> Automated KYC verification &amp; FASTag integration</li>
             </ul>
-            <a href="https://play.google.com/store/apps/details?id=com.jatayu.valk&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="card-link">View App <i class="ph ph-arrow-up-right"></i></a>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--org">
-            <div class="port-overlay">
-              <span class="port-tag">Enterprise</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/org_management.png" alt="Organization Management Application" class="project-img" />
+            <span class="project-badge">Enterprise</span>
           </div>
-          <div class="port-info">
-            <h4>ORGANIZATION MANAGEMENT APPLICATION</h4>
-            <p>AN INTEGRATED PLATFORM FOR EMPLOYEE AND INVENTORY MANAGEMENT</p>
-            <ul class="port-details-list">
-              <li>Built <strong>location-based attendance system</strong> with selfie verification.</li>
-              <li>Developed <strong>task assignment and status updating workflow</strong>.</li>
-              <li>Created a <strong>leave management system</strong> with approval processes.</li>
-              <li>Implemented <strong>employee profile management</strong> with historical data.</li>
-              <li>Engineered <strong>inventory tracking system</strong> with barcode scanning.</li>
-              <li>Built <strong>dynamic forms</strong> for advanced salary requests and approvals.</li>
-              <li>Developed <strong>stock usage reporting</strong> with automated inventory updates.</li>
-              <li>Integrated <strong>camera functionality</strong> for work verification processes.</li>
+          <div class="project-body">
+            <h3>Organization &amp; Field Workforce Suite</h3>
+            <p class="project-summary">
+              An integrated employee attendance, task dispatch, and warehouse inventory tracking suite for distributed operational teams.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Geofenced attendance logging with selfie verification</li>
+              <li><i class="ph ph-check"></i> Automated inventory tracking with barcode scanning</li>
+              <li><i class="ph ph-check"></i> Structured leave management &amp; payroll approval workflows</li>
             </ul>
           </div>
         </div>
 
         <!-- Project 4 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--insurance">
-            <div class="port-overlay">
-              <span class="port-tag">Insurance</span>
-            </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrapper">
+            <img src="assets/insurance_manager.png" alt="Insurance Process Manager" class="project-img" />
+            <span class="project-badge">Insurance</span>
           </div>
-          <div class="port-info">
-            <h4>INSURANCE PROCESS MANAGER</h4>
-            <p>Platform to manage the insurance process status.</p>
-            <ul class="port-details-list">
-              <li>Streamlined <strong>vehicle insurance workflows</strong> with seamless image uploads (up to 300KB for vehicle photos).</li>
-              <li>Implemented <strong>image categorization</strong> into document images, spot images, and preparing images.</li>
-              <li>Simplified the <strong>insurance process</strong> by storing essential vehicle and owner details.</li>
-              <li>Facilitated <strong>quick access to critical information</strong>, enhancing policy management and claims processing.</li>
-              <li>Designed an <strong>optimized image handling</strong> system and user-friendly interface.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--employee">
-            <div class="port-overlay">
-              <span class="port-tag">Operations</span>
-            </div>
-          </div>
-          <div class="port-info">
-            <h4>EMPLOYEE MANAGEMENT SYSTEM</h4>
-            <p>Manage user-wise office tasks.</p>
-            <ul class="port-details-list">
-              <li>Designed a system to <strong>create tasks</strong> with estimated working times and delay explanation requirements.</li>
-              <li>Implemented an <strong>attendance verification system</strong> utilizing selfie capture and current GPS location.</li>
-              <li>Integrated <strong>leave management</strong> workflows with administrative approval processes.</li>
-              <li>Built a <strong>historical work log</strong> to track completed tasks and total hours worked.</li>
-              <li>Created a list of company projects and modules for <strong>easy project overview and access</strong>.</li>
-              <li>Integrated <strong>Firebase-powered push notifications</strong> for task reminders, updates, and approvals.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--society">
-            <div class="port-overlay">
-              <span class="port-tag">Community</span>
-            </div>
-          </div>
-          <div class="port-info">
-            <h4>SOCIETY MANAGEMENT</h4>
-            <p>AN INTEGRATED PLATFORM FOR MANAGE THE SOCIETY OPERATIONS</p>
-            <ul class="port-details-list">
-              <li>Built a <strong>visitor & gate management system</strong> with entry/exit logging, QR-code pass verification, and guard-side authentication.</li>
-              <li>Developed <strong>maintenance request & complaint workflows</strong>, including ticket creation, status updates, media attachments, and admin resolution tracking.</li>
-              <li>Created an <strong>amenity booking module</strong> with real-time availability, slot restrictions, and approval/rejection processes.</li>
-              <li>Implemented <strong>resident & staff profile management</strong> with role-based permissions, block/flat mapping, and document handling.</li>
-              <li>Engineered a <strong>vehicle & parking slot management system</strong> including slot allocation, vehicle registration, and automated availability updates.</li>
-              <li>Integrated <strong>camera and gallery functionality</strong> for uploading flat images, society documents, maintenance proof, and verification media.</li>
-              <li>Implemented <strong>committee & sub-admin permission modules</strong> for granular access control across society operations.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Project 7 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--society-admin">
-            <div class="port-overlay">
-              <span class="port-tag">Web Portal</span>
-            </div>
-          </div>
-          <div class="port-info">
-            <h4>SOCIETY MANAGEMENT ADMIN PANEL</h4>
-            <p>AN INTEGRATED WEB PLATFORM FOR CENTRALIZED SOCIETY MANAGEMENT.</p>
-            <ul class="port-details-list">
-              <li>Built a <strong>comprehensive admin dashboard</strong> for real-time monitoring of society activities, visitors, complaints, bookings, and finances.</li>
-              <li>Developed a <strong>visitor & gate management control panel</strong> with live entry/exit logs, QR verification tracking, and guard activity monitoring.</li>
-              <li>Implemented a <strong>complaint & maintenance management system</strong> with ticket assignment, priority handling, status tracking, and resolution analytics.</li>
-              <li>Created an <strong>amenity booking management module</strong> allowing admins to configure slots, set restrictions, approve/reject requests, and monitor usage trends.</li>
-              <li>Designed a <strong>resident & staff management system</strong> with role-based access control, block/flat hierarchy mapping, and document verification.</li>
-              <li>Engineered a <strong>vehicle & parking slot management system</strong> including slot allocation, vehicle registration, and automated availability updates.</li>
-              <li>Integrated a <strong>media & document management system</strong> for handling society documents, flat images, verification files, and maintenance proofs.</li>
-              <li>Built a <strong>committee & sub-admin control panel</strong> with granular permission settings to manage access across different modules.</li>
-              <li>Developed <strong>analytics & reporting features</strong> for insights into complaints, visitor trends, amenity usage, and operational efficiency.</li>
-              <li>Implemented a <strong>secure authentication & authorization system</strong> ensuring role-based access and protected admin operations.</li>
-              <li>Optimized the UI using <strong>React JS and CSS</strong> for responsive, fast, and scalable performance.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Project 8 -->
-        <div class="portfolio-card reveal">
-          <div class="port-img port-img--ship-chandling">
-            <div class="port-overlay">
-              <span class="port-tag">ERP System</span>
-            </div>
-          </div>
-          <div class="port-info">
-            <h4>Ship Chandling ERP project (Continue)</h4>
-            <p>AN INTEGRATED PLATFORM FOR SHIP CHANDLING OPERATIONS.</p>
-            <ul class="port-details-list">
-              <li>Developed a <strong>Ship Chandling ERP platform</strong> to streamline marine procurement and vessel supply operations.</li>
-              <li>Built an <strong>inquiry management system</strong> to handle vessel requirements from inquiry to quotation.</li>
-              <li>Implemented <strong>vendor management and quotation comparison</strong> for efficient supplier selection.</li>
-              <li>Developed workflows for <strong>purchase orders, inventory, delivery, and operational tracking</strong>.</li>
-              <li>Integrated <strong>email-based inquiry processing</strong> to simplify and automate incoming vessel requests.</li>
-              <li>Built <strong>role-based access control</strong> for administrators, operations teams, procurement teams, and other users.</li>
-              <li>Developed <strong>dashboards and reports</strong> for tracking inquiries, quotations, orders, and business performance.</li>
-              <li>Designed the system to reduce manual work and improve the overall <strong>inquiry-to-delivery workflow</strong>.</li>
+          <div class="project-body">
+            <h3>Commercial Vehicle Insurance Manager</h3>
+            <p class="project-summary">
+              A specialized workflow platform streamlining vehicle insurance inspections, claims documentation, and policy history tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="ph ph-check"></i> Optimized multi-image categorization and cloud upload</li>
+              <li><i class="ph ph-check"></i> Centralized vehicle policy records &amp; inspection history</li>
+              <li><i class="ph ph-check"></i> Fast claims verification pipeline for fleet administrators</li>
             </ul>
           </div>
         </div>
       </div>
+
+      <div class="projects-cta-row reveal" style="display: flex; justify-content: center; margin-top: 3rem; text-align: center;">
+        <a href="projects.html" class="btn btn-primary btn-lg">
+          View All Projects <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
     </div>
   </section>
-
 
   <!-- ===================== TECHNOLOGIES ===================== -->
   <section class="section technologies" id="technologies">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow reveal">Our Stack</p>
-        <h2 class="section-title reveal">Technologies We Serve</h2>
+        <p class="section-eyebrow reveal">Technology Stack</p>
+        <h2 class="section-title reveal">Enterprise Tech Stack &amp; Frameworks</h2>
       </div>
 
       <div class="tech-grid">
-        <div class="tech-card reveal" data-delay="0">
-          <h3><i class="ph ph-layout"></i> Frontend</h3>
-          <div class="tech-tags">
-            <span>React</span><span>Next.js</span><span>Vue.js</span><span>TypeScript</span>
-            <span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
+        <!-- Tech 1 -->
+        <div class="tech-group reveal">
+          <h3><i class="ph ph-layout"></i> Frontend Engineering</h3>
+          <div class="tech-badges">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Bootstrap</span>
           </div>
         </div>
 
-        <div class="tech-card reveal" data-delay="1">
+        <!-- Tech 2 -->
+        <div class="tech-group reveal">
           <h3><i class="ph ph-cpu"></i> Backend &amp; APIs</h3>
-          <div class="tech-tags">
-            <span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span>
-            <span>REST APIs</span><span>GraphQL</span><span>Socket.IO</span>
+          <div class="tech-badges">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">RESTful APIs</span>
+            <span class="tech-tag">GraphQL</span>
           </div>
         </div>
 
-        <div class="tech-card reveal" data-delay="2">
-          <h3><i class="ph ph-device-mobile"></i> Mobile</h3>
-          <div class="tech-tags">
-            <span>Flutter</span><span>React Native</span><span>Android</span><span>iOS</span>
-            <span>Firebase</span>
+        <!-- Tech 3 -->
+        <div class="tech-group reveal">
+          <h3><i class="ph ph-device-mobile"></i> Mobile Platforms</h3>
+          <div class="tech-badges">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Android (Kotlin)</span>
+            <span class="tech-tag">iOS (Swift)</span>
+            <span class="tech-tag">Firebase FCM</span>
           </div>
         </div>
 
-        <div class="tech-card reveal" data-delay="3">
+        <!-- Tech 4 -->
+        <div class="tech-group reveal">
           <h3><i class="ph ph-cloud"></i> Cloud &amp; DevOps</h3>
-          <div class="tech-tags">
-            <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
-            <span>NGINX</span><span>Linux</span><span>GitHub Actions</span>
+          <div class="tech-badges">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">CI/CD Pipelines</span>
+            <span class="tech-tag">NGINX</span>
+            <span class="tech-tag">Linux</span>
           </div>
         </div>
 
-        <div class="tech-card reveal" data-delay="4">
-          <h3><i class="ph ph-database"></i> Database &amp; Analytics</h3>
-          <div class="tech-tags">
-            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span>
-            <span>Elasticsearch</span><span>Power BI</span>
+        <!-- Tech 5 -->
+        <div class="tech-group reveal">
+          <h3><i class="ph ph-database"></i> Database Infrastructure</h3>
+          <div class="tech-badges">
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Elasticsearch</span>
           </div>
         </div>
 
-        <div class="tech-card reveal" data-delay="5">
-          <h3><i class="ph ph-shield-check"></i> QA &amp; Growth</h3>
-          <div class="tech-tags">
-            <span>Manual Testing</span><span>Automation Testing</span><span>Cypress</span><span>Selenium</span>
-            <span>SEO</span><span>Google Ads</span><span>Meta Ads</span>
+        <!-- Tech 6 -->
+        <div class="tech-group reveal">
+          <h3><i class="ph ph-shield-check"></i> Testing &amp; Governance</h3>
+          <div class="tech-badges">
+            <span class="tech-tag">Automated Testing</span>
+            <span class="tech-tag">Manual QA</span>
+            <span class="tech-tag">Cypress</span>
+            <span class="tech-tag">Postman API Testing</span>
+            <span class="tech-tag">SEO Audit</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CONTACT ===================== -->
+  <!-- ===================== CONTACT SECTION (Clean Executive Card) ===================== -->
   <section class="section contact" id="contact">
-    <div class="container contact-grid">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="contact-card-header">
+          <p class="section-eyebrow">Direct Engagement</p>
+          <h2 class="section-title">Get In Touch With Our Engineering Team</h2>
+          <p class="contact-subtitle">
+            Connect directly with SkyFleet Technologies for project inquiries, technical consultations, or partnership opportunities.
+          </p>
+        </div>
 
-      <div class="contact-info">
-        <p class="section-eyebrow reveal">Get In Touch</p>
-        <h2 class="section-title reveal">Let's Build Something<br />Great Together</h2>
-        <!-- Edit contact details here -->
-        <ul class="contact-details reveal">
-          <li><i class="ph ph-map-pin"></i> 201 Tech Park, Ahmedabad, Gujarat 380015</li>
-          <li><i class="ph ph-phone"></i> +91 97730 27241 | +91 96240 71076</li>
-          <li><i class="ph ph-envelope"></i> hello.skyfleettechnologies@gmail.com</li>
-        </ul>
-        <div class="contact-socials reveal">
-          <!-- Edit social links here -->
-          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-          <a href="#" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
-          <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
-          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <div class="contact-details-grid">
+          <div class="contact-detail-box">
+            <i class="ph ph-envelope-simple"></i>
+            <div>
+              <strong>Email Us</strong>
+              <a href="mailto:info.skyfleettechnologies@gmail.com">info.skyfleettechnologies@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-box">
+            <i class="ph ph-phone"></i>
+            <div>
+              <strong>Phone Enquiries</strong>
+              <p>+91 97730 27241 &nbsp;|&nbsp; +91 96240 71076</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-box">
+            <i class="ph ph-map-pin"></i>
+            <div>
+              <strong>Office Headquarters</strong>
+              <p>Near CBD mall, SG Highway, Ahmedabad, Gujarat, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card-actions">
+          <a href="mailto:info.skyfleettechnologies@gmail.com" class="btn btn-primary btn-lg">
+            Send Email Enquiry <i class="ph ph-paper-plane-tilt"></i>
+          </a>
         </div>
       </div>
-
-      <!-- Contact Form -->
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
-          </div>
-          <div class="form-group">
-            <label for="service">Service Required *</label>
-            <!-- Edit dropdown options here -->
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="Web Development">Web Development</option>
-              <option value="Mobile App Development">Mobile App Development</option>
-              <option value="Database Management">Database Management</option>
-              <option value="API Development">API Development</option>
-              <option value="UI/UX Design">UI/UX Design</option>
-              <option value="Cloud Services">Cloud Services</option>
-              <option value="QA Testing">QA Testing</option>
-              <option value="Digital Marketing">Digital Marketing</option>
-              <option value="Maintenance & Support">Maintenance &amp; Support</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group form-group--full">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
-            required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-          <span id="btnText">Send Message <i class="ph ph-paper-plane-tilt"></i></span>
-          <span id="btnLoader" class="hidden">Sending…</span>
-        </button>
-        <!-- Form feedback messages -->
-        <p class="form-success hidden" id="formSuccess">✅ Your message was sent! We'll be in touch shortly.</p>
-        <p class="form-error hidden" id="formError">❌ Something went wrong. Please try again or email us directly.</p>
-      </form>
-
     </div>
   </section>
 
@@ -596,47 +430,44 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#hero" class="logo">
-          <img src="ChatGPT Image Apr 17, 2026 at 04_16_04 PM.png" alt="SkyFleet Technologies logo"
-            class="logo-image" />
-          <span class="logo-text">SkyFleet</span>
+          <img src="assets/skyfleet_logo.svg" alt="SkyFleet Technologies logo" class="logo-icon" />
+          <span>SkyFleet Technologies</span>
         </a>
-        <!-- Edit footer tagline here -->
-        <p>Your Complete IT Solutions Partner — building the digital future.</p>
+        <p>Your trusted enterprise IT partner for custom software engineering and digital solutions across all industries.</p>
       </div>
-      <div class="footer-links">
-        <h5>Quick Links</h5>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#technologies">Technologies</a></li>
         </ul>
       </div>
-      <div class="footer-links">
-        <h5>Services</h5>
+
+      <div class="footer-col">
+        <h5>Capabilities</h5>
         <ul>
-          <li><a href="#contact">Web Development</a></li>
-          <li><a href="#contact">Mobile Apps</a></li>
-          <li><a href="#contact">Cloud Services</a></li>
-          <li><a href="#contact">Startup Solutions</a></li>
-          <li><a href="#contact">UI/UX Design</a></li>
+          <li><a href="#services">Web Systems</a></li>
+          <li><a href="#services">Mobile Telematics</a></li>
+          <li><a href="#services">Cloud Infrastructure</a></li>
+          <li><a href="#services">System Integration</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
+
+      <div class="footer-col">
         <h5>Contact</h5>
-        <!-- Edit footer contact info here -->
-        <p><i class="ph ph-envelope"></i> hello.skyfleettechnologies@gmail.com</p>
-        <p><i class="ph ph-phone"></i> +91 97730 27241 | +91 96240 71076</p>
-        <div class="footer-socials">
-          <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-          <a href="#" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a>
-          <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-          <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-        </div>
+        <ul>
+          <li><a href="mailto:info.skyfleettechnologies@gmail.com">info.skyfleettechnologies@gmail.com</a></li>
+          <li><a href="#contact">+91 97730 27241</a></li>
+          <li><a href="#contact">Ahmedabad, Gujarat, India</a></li>
+        </ul>
       </div>
     </div>
-    <!-- Edit copyright year/name here -->
+
     <div class="footer-bottom">
-      <p>© 2025 SkyFleet Technologies. All rights reserved.</p>
+      <p>© <span id="year">2026</span> SkyFleet Technologies. All rights reserved.</p>
     </div>
   </footer>
 

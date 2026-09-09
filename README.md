@@ -1,148 +1,70 @@
-# NexaCore IT Solutions — Landing Page
+# SkyFleet Technologies — Landing Page
 
-A professional, fully-responsive IT services landing page with Node.js (or PHP) contact form backend.
+A professional, fully-responsive IT services landing page built with pure HTML, CSS, and Vanilla JavaScript.
 
 ---
 
 ## 📁 Folder Structure
 
 ```
-nexacore-it-services/
+skyfleet-technologies/
 │
-├── index.html          ← Main HTML page (all sections)
-├── style.css           ← All styling (edit CSS variables to retheme)
-├── script.js           ← JS: navbar, animations, counter, form submit
+├── index.html          ← Main HTML5 page (all sections)
+├── style.css           ← All styling (CSS custom properties, responsive design)
+├── script.js           ← Vanilla JS (sticky navbar, menu, scroll animations, card tilt)
 │
-├── server.js           ← Node.js + Express email backend
-├── mail.php            ← PHP alternative email backend
-├── package.json        ← Node.js dependencies
-├── .env.example        ← Copy to .env and fill in SMTP credentials
+├── assets/             ← Project images and graphic assets
 │
-└── README.md           ← This file
+└── README.md           ← Documentation
 ```
 
 ---
 
 ## 🚀 How to Run Locally
 
-### Option A — Frontend only (no email)
+1. Simply open `index.html` directly in any web browser, **or**
+2. Use VS Code's **Live Server** extension (or any local static file server) for live reload.
 
-1. Open `index.html` directly in your browser, **or**
-2. Use VS Code's **Live Server** extension for hot reload.
-
-> The contact form will show an error (can't reach backend), but everything else works perfectly.
-
----
-
-### Option B — Full stack with Node.js backend
-
-**Requirements:** Node.js 18+ installed
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Set up environment variables
-cp .env.example .env
-# Then open .env and fill in your SMTP credentials (see below)
-
-# 3. Start the server
-npm start
-# or for auto-restart during development:
-npm run dev
-```
-
-The server runs at `http://localhost:3001`.
-Open `index.html` with Live Server (port 5500) — form submissions will work.
-
----
-
-### Option C — PHP backend (shared hosting)
-
-1. Upload all files to your hosting's `public_html` (or similar).
-2. In `script.js`, change the fetch URL from:
-   ```js
-   'http://localhost:3001/send-email'
-   ```
-   to:
-   ```js
-   'mail.php'
-   ```
-3. Edit `$to_email` in `mail.php` to your inbox.
-4. Done! PHP's `mail()` function handles sending.
-
-For SMTP via PHPMailer (recommended for Gmail), see the commented section at the bottom of `mail.php`.
-
----
-
-## 🔑 SMTP / Gmail Setup
-
-1. Enable **2-Step Verification** on your Google account.
-2. Visit [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords).
-3. Generate an App Password for "Mail" → "Other".
-4. Paste the 16-character password into `.env` as `SMTP_PASS`.
-
-Works with any SMTP provider: SendGrid, Mailgun, Zoho, Outlook, etc.
+No backend server, build step, or Node environment required!
 
 ---
 
 ## 🎨 Customisation Guide
 
 ### Change company name / content
-- All text is in `index.html`. Search for comments like `<!-- Edit ... here -->`.
-- Company name: `NexaCore` → find & replace in `index.html`.
+- All text content is in `index.html`.
+- Company details and contact info can be modified directly in the respective HTML section tags.
 
 ### Change colours
-Open `style.css` and edit the `:root` block at the top:
+Open `style.css` and edit the `:root` variables block at the top:
 ```css
 :root {
-  --accent:   #00d4ff;   /* primary colour */
-  --accent-2: #7c3aed;   /* secondary colour */
-  --bg:       #07090f;   /* page background */
-}
-```
-
-### Add/remove services
-In `index.html`, find the `<!-- ── Service Card: ... ── -->` comments and copy/paste a card block.
-
-### Replace portfolio images
-Find `.port-img--1` through `.port-img--6` in `style.css` and replace the gradient with a real image:
-```css
-.port-img--1 {
-  background-image: url('images/project1.jpg');
+  --accent:    #00d4ff;   /* primary accent colour */
+  --accent-2:  #7c3aed;   /* secondary accent colour */
+  --bg:        #07090f;   /* page background */
 }
 ```
 
 ---
 
-## 📦 Libraries Used (all free/open-source)
+## 📦 Tech Stack & Assets
 
-| Library | Purpose | CDN |
-|---|---|---|
-| [Phosphor Icons](https://phosphoricons.com/) | Icons | unpkg |
-| [Google Fonts](https://fonts.google.com/) — Syne + DM Sans | Typography | fonts.googleapis.com |
-
-No frontend frameworks required. Pure HTML, CSS, JavaScript.
+- **HTML5**: Semantic markup & SEO structured content
+- **CSS3**: Custom layout, flexbox, grid, glassmorphism, responsive styles
+- **Vanilla JavaScript**: Mobile navigation, IntersectionObserver scroll animations, 3D card tilts, client-side form validation
+- **Icons**: [Phosphor Icons](https://phosphoricons.com/)
+- **Typography**: Google Fonts (Syne + DM Sans)
 
 ---
 
 ## 🌐 Deploying to Production
 
-**Frontend:** Host `index.html`, `style.css`, `script.js` on any static host:
-- [Netlify](https://netlify.com) (recommended, free tier)
-- [Vercel](https://vercel.com)
+Host `index.html`, `style.css`, `script.js`, and `assets/` on any static hosting provider:
 - [GitHub Pages](https://pages.github.com)
-
-**Backend (Node.js):** Deploy `server.js` to:
-- [Railway](https://railway.app) (easiest, free tier)
-- [Render](https://render.com)
-- Any VPS (DigitalOcean, Linode, etc.)
-
-After deploying, update the fetch URL in `script.js`:
-```js
-const response = await fetch('https://your-backend-url.railway.app/send-email', { ... });
-```
+- [Netlify](https://netlify.com)
+- [Vercel](https://vercel.com)
+- Standard Web Hosting (cPanel / Apache / NGINX)
 
 ---
 
-© 2025 NexaCore IT Solutions
+© 2026 SkyFleet Technologies. All rights reserved.
